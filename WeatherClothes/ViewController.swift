@@ -41,14 +41,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fieldLatChanged(_ sender: Any) {
-//        if fieldLatitude.text?.characters.last! != "N"{
-//            fieldLatitude.text = fieldLatitude.text! + DEGREE_SYMBOL + "N"
-//        }
+        //        if fieldLatitude.text?.characters.last! != "N"{
+        //            fieldLatitude.text = fieldLatitude.text! + DEGREE_SYMBOL + "N"
+        //        }
     }
     @IBAction func fieldLonChanged(_ sender: Any) {
-//        if fieldLongitude.text?.characters.last! != "W"{
-//            fieldLongitude.text = fieldLongitude.text! + DEGREE_SYMBOL + "W"
-//        }
+        //        if fieldLongitude.text?.characters.last! != "W"{
+        //            fieldLongitude.text = fieldLongitude.text! + DEGREE_SYMBOL + "W"
+        //        }
     }
     
     @IBAction func buttonTouchUpInside(_ sender: Any) {
@@ -154,7 +154,7 @@ class ViewController: UIViewController {
             }
         }
     }
-     
+    
     // MARK: - UI Methods
     func setResultsUI(result : ResultModel){
         self.labelTopRecommendation.text = result.recommendedTop?.capitalized
