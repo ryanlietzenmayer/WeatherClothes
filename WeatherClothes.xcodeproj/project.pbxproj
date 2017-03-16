@@ -14,6 +14,7 @@
 		9AEE25671E7B09C500352BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE25651E7B09C500352BDF /* LaunchScreen.storyboard */; };
 		9AEE25721E7B09C500352BDF /* WeatherClothesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE25711E7B09C500352BDF /* WeatherClothesTests.swift */; };
 		9AEE257D1E7B09C500352BDF /* WeatherClothesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE257C1E7B09C500352BDF /* WeatherClothesUITests.swift */; };
+		9AEE258B1E7B1C7A00352BDF /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE258A1E7B1C7A00352BDF /* ResultModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9AEE25781E7B09C500352BDF /* WeatherClothesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherClothesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEE257C1E7B09C500352BDF /* WeatherClothesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClothesUITests.swift; sourceTree = "<group>"; };
 		9AEE257E1E7B09C500352BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AEE258A1E7B1C7A00352BDF /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				9AEE255C1E7B09C500352BDF /* AppDelegate.swift */,
 				9AEE255E1E7B09C500352BDF /* ViewController.swift */,
+				9AEE258A1E7B1C7A00352BDF /* ResultModel.swift */,
 				9AEE25601E7B09C500352BDF /* Main.storyboard */,
 				9AEE25631E7B09C500352BDF /* Assets.xcassets */,
 				9AEE25651E7B09C500352BDF /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				9AEE255F1E7B09C500352BDF /* ViewController.swift in Sources */,
 				9AEE255D1E7B09C500352BDF /* AppDelegate.swift in Sources */,
+				9AEE258B1E7B1C7A00352BDF /* ResultModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
