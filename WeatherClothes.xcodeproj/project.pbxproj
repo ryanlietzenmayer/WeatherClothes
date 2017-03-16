@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AAAC0821E7B494A00EA54F0 /* ResultModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAAC0811E7B494A00EA54F0 /* ResultModelTests.swift */; };
+		9AAAC0841E7B569A00EA54F0 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AAAC0831E7B569A00EA54F0 /* Keys.plist */; };
 		9AEE255D1E7B09C500352BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE255C1E7B09C500352BDF /* AppDelegate.swift */; };
 		9AEE255F1E7B09C500352BDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE255E1E7B09C500352BDF /* ViewController.swift */; };
 		9AEE25621E7B09C500352BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE25601E7B09C500352BDF /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AAAC0811E7B494A00EA54F0 /* ResultModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModelTests.swift; sourceTree = "<group>"; };
+		9AAAC0831E7B569A00EA54F0 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		9AEE25591E7B09C500352BDF /* WeatherClothes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherClothes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEE255C1E7B09C500352BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AEE255E1E7B09C500352BDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				9AEE25631E7B09C500352BDF /* Assets.xcassets */,
 				9AEE25651E7B09C500352BDF /* LaunchScreen.storyboard */,
 				9AEE25681E7B09C500352BDF /* Info.plist */,
+				9AAAC0831E7B569A00EA54F0 /* Keys.plist */,
 			);
 			path = WeatherClothes;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 		9AEE25701E7B09C500352BDF /* WeatherClothesTests */ = {
 			isa = PBXGroup;
 			children = (
+				9AAAC0811E7B494A00EA54F0 /* ResultModelTests.swift */,
 				9AEE25711E7B09C500352BDF /* WeatherClothesTests.swift */,
 				9AEE25731E7B09C500352BDF /* Info.plist */,
 			);
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAAC0841E7B569A00EA54F0 /* Keys.plist in Resources */,
 				9AEE25671E7B09C500352BDF /* LaunchScreen.storyboard in Resources */,
 				9AEE25641E7B09C500352BDF /* Assets.xcassets in Resources */,
 				9AEE25621E7B09C500352BDF /* Main.storyboard in Resources */,
@@ -272,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAAC0821E7B494A00EA54F0 /* ResultModelTests.swift in Sources */,
 				9AEE25721E7B09C500352BDF /* WeatherClothesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +517,7 @@
 				9AEE25831E7B09C500352BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AEE25841E7B09C500352BDF /* Build configuration list for PBXNativeTarget "WeatherClothesTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +526,7 @@
 				9AEE25861E7B09C500352BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AEE25871E7B09C500352BDF /* Build configuration list for PBXNativeTarget "WeatherClothesUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +535,7 @@
 				9AEE25891E7B09C500352BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

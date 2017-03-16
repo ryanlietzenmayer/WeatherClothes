@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  WeatherClothes
 //
-//  Created by Meng Wang on 3/16/17.
+//  Created by Ryan Lietzenmayer on 3/16/17.
 //  Copyright © 2017 Ryan Lietzenmayer. All rights reserved.
 //
 
@@ -62,7 +62,17 @@ class ViewController: UIViewController {
             latitudeString = "0"
         }
         
-        return Float(latitudeString!) ?? 0
+        var lat = Float(latitudeString!) ?? 0
+        if lat > 90.0{
+            lat = 90.0
+            fieldLatitude.text = "90"
+        }
+        else if lat < -90.0{
+            lat = -90.0
+            fieldLatitude.text = "-90"
+        }
+        
+        return lat
     }
     
     func getLongitude()->Float{
@@ -72,11 +82,40 @@ class ViewController: UIViewController {
             longitudeString = "0"
         }
         
-        return Float(longitudeString!) ?? 0
+        var lon = Float(longitudeString!) ?? 0
+        if lon > 180.0{
+            lon = 180.0
+            fieldLongitude.text = "180"
+        }
+        else if lon < -180.0{
+            lon = -180.0
+            fieldLongitude.text = "-180"
+        }
+        
+        return lon
     }
     
     func submitParams(){
-        let apiKey = "8bb2f7ef674ad0d34a1e85caab5c2be3"
+        let url = buildGetWeatherURL()
+        
+        setWaitingUI()
+        getData(urlString: url)
+    }
+    
+    func valueForAPIKey(named keyname:String) -> String {
+        //TODO: get this out of the view controller
+        let filePath = Bundle.main.path(forResource: "Keys", ofType: "plist")
+        let plist = NSDictionary(contentsOfFile:filePath!)
+        let value = plist?.object(forKey: keyname) as! String
+        return value
+    }
+    
+    func buildGetWeatherURL()->String{
+        //Example url
+        // https://api.darksky.net/forecast/apiKey/lat,lon
+        
+        let apiKey = valueForAPIKey(named: "WeatherKey");
+        
         let lat = getLatitude()
         let lon = getLongitude()
         
@@ -86,15 +125,9 @@ class ViewController: UIViewController {
         url += String(lat)
         url += ","
         url += String(lon)
-        
-        //Example url
-        // forecast/apiKey/lat,lon
-        //https://api.darksky.net/forecast/8bb2f7ef674ad0d34a1e85caab5c2be3/37.8267,-122.4233
-        
-        setWaitingUI()
-        getData(urlString: url)
+
+        return url
     }
-    
     func getData(urlString:String){
         let thisUrlString = URL(string: urlString)
         

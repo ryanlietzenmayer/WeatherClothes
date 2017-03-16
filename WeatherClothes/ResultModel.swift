@@ -2,7 +2,7 @@
 //  ResultModel.swift
 //  WeatherClothes
 //
-//  Created by Meng Wang on 3/16/17.
+//  Created by Ryan Lietzenmayer on 3/16/17.
 //  Copyright © 2017 Ryan Lietzenmayer. All rights reserved.
 //
 
@@ -23,9 +23,6 @@ class ResultModel {
 
     
     func determineRecommendation(){
-        recommendedBottom = "pants"
-        recommendedShoes = "shoes"
-        
         if currentTemperature > 100{
             recommendedTop = "naked"
             recommendedBottom = "whatever you don't mind getting swampy"

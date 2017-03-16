@@ -2,7 +2,7 @@
 //  WeatherClothesUITests.swift
 //  WeatherClothesUITests
 //
-//  Created by Meng Wang on 3/16/17.
+//  Created by Ryan Lietzenmayer on 3/16/17.
 //  Copyright © 2017 Ryan Lietzenmayer. All rights reserved.
 //
 
