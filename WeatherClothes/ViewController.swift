@@ -154,7 +154,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+     
     // MARK: - UI Methods
     func setResultsUI(result : ResultModel){
         self.labelTopRecommendation.text = result.recommendedTop?.capitalized
